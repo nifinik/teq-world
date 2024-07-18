@@ -1,0 +1,48 @@
+@import "../../Variables.scss";
+
+// header
+.header {
+  // font-family: "Unbounded", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin-top: 48px;
+
+  nav {
+    display: flex;
+    border-radius: 8px;
+    background-color: $nextColor;
+    color: #7e8b95;
+    font-weight: 600;
+    gap: 8px;
+  }
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #7e8b95;
+
+  &_active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    background-color: $primaryColor;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+}
+
+.logoSide {
+  background-color: $nextColor;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}

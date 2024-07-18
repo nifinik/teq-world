@@ -1,0 +1,413 @@
+@import "../src/Variables.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoSide {
+  background-color: $nextColor;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secBtn {
+  background-color: $nextColor;
+  color: $primaryColor;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mainBtn {
+  background-color: $primaryColor;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.line {
+  border: 2px solid $mainBlack;
+}
+
+.titleHead {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.title {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-family: "Unbounded";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 112.4%;
+  letter-spacing: 0.04em;
+}
+
+.descr {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 112.4%;
+  letter-spacing: 0.04em;
+  margin-bottom: 48px;
+}
+
+// Main section
+
+.main {
+  margin-top: 80px;
+  padding: 0 80px;
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &_title {
+      margin: 0;
+      font-family: "Unbounded", sans-serif;
+      text-align: start;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 88.9%;
+      letter-spacing: 0.04em;
+      max-width: 800px;
+    }
+
+    &_right {
+      &_btns {
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+      }
+    }
+
+    &_text {
+      text-align: end;
+    }
+  }
+
+  &_bg {
+    margin-top: 48px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+}
+
+// AboutUs section
+
+.aboutUs {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 80px;
+  border-top: 4px solid $mainBlack;
+  border-bottom: 4px solid $mainBlack;
+
+  &_left {
+    flex: 1;
+    text-align: start;
+    padding-top: 20px;
+
+    a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 112.4%;
+      letter-spacing: 0.04em;
+      color: $primaryColor;
+    }
+  }
+
+  &_right {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: start;
+    flex: 1;
+
+    .descr_items {
+      margin-top: 72px;
+
+      .item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        &_descr {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 138.9%;
+          letter-spacing: 0.04em;
+        }
+      }
+    }
+  }
+
+  .title_sec {
+    font-family: "Unbounded";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 112.4%;
+    letter-spacing: 0.04em;
+
+    span {
+      color: $primaryColor;
+    }
+  }
+}
+
+// Footer content
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  padding: 48px 0;
+  margin: 0 80px;
+
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    img {
+      width: 108px;
+    }
+  }
+
+  &_nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &_bottom {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    &_items {
+      display: flex;
+      gap: 36px;
+
+      .item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.04em;
+        text-align: start;
+      }
+    }
+
+    &_contact {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      .text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+        letter-spacing: 0.04em;
+      }
+
+      .contacts {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+}
+
+// CallUs content
+
+.callUs {
+  margin-top: 80px;
+  padding: 0 80px;
+  display: flex;
+  gap: 120px;
+  margin-bottom: 100px;
+
+  &_left {
+    flex: 1;
+    text-align: start;
+  }
+
+  &_right {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 96px;
+    flex: 1;
+    text-align: start;
+  }
+
+  &_input {
+    background-color: $bgColor;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    border: 1px solid $borderColor;
+    border-radius: 8px;
+  }
+
+  &_input:nth-child(3) {
+    padding: 14px 16px 56px 16px;
+  }
+
+  .mainBtn {
+    margin-top: 24px;
+  }
+}
+
+.checkSide {
+  margin-top: 8px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: #3a3a3a;
+  }
+}
+
+// Partners
+
+.partners {
+  padding-bottom: 60px;
+  border-bottom: 4px solid $mainBlack;
+
+  &_content {
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .items-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    // gap: 20px;
+  }
+  .items-wrap:before,
+  .items-wrap:after {
+    content: "";
+    height: 100%;
+    top: 0;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .item {
+    flex: 0 0 auto;
+    counter-increment: item;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-blend-mode: multiply;
+    color: #fff;
+    margin: 10px 0;
+    transition: all 0.1s ease-in-out;
+  }
+  .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .item:before {
+    content: counter(item);
+  }
+
+  .marquee {
+    animation: scroll 20s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
