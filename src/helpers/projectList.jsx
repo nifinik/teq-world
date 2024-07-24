@@ -10,6 +10,10 @@ import service2 from "../img/services/serviceItem_2.png";
 import service3 from "../img/services/serviceItem_3.png";
 import service4 from "../img/services/serviceItem_4.png";
 
+import sertificate1 from "../img/sertificate/sertificate_1.png";
+import sertificate2 from "../img/sertificate/sertificate_3.png";
+import sertificate3 from "../img/sertificate/sertificate_2.png";
+
 import bgImg from "../img/bg-main.png";
 import titleSnow from "../img/icons-svg/titleVec.svg";
 import star from "../img/icons-svg/starVec.svg";
@@ -17,6 +21,10 @@ import logo from "../img/icons-svg/teq.svg";
 import instagram from "../img/icons-svg/contacts/instagram.svg";
 import facebook from "../img/icons-svg/contacts/facebook.svg";
 import linkedin from "../img/icons-svg/contacts/linkedin.svg";
+
+import benefitIcon from "../img/icons-svg/benefit-Icon.svg";
+
+import teamImg from "../img/team_img.svg";
 
 const projects = [
   {
@@ -51,7 +59,14 @@ const projects = [
   },
 ];
 
+const sertificate = {
+  sertificate1: sertificate1,
+  sertificate2: sertificate2,
+  sertificate3: sertificate3,
+};
+
 const res = {
+  teamImg: teamImg,
   bgImg: bgImg,
   titleSnow: titleSnow,
   star: star,
@@ -59,6 +74,7 @@ const res = {
   instagram: instagram,
   facebook: facebook,
   linkedin: linkedin,
+  benefitIcon: benefitIcon,
 };
 
 const partners = [partner1, partner2, partner3, partner4, partner5, partner6];
@@ -66,3 +82,4 @@ const partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 export { projects };
 export { partners };
 export { res };
+export { sertificate };

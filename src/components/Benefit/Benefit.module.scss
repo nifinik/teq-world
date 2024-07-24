@@ -1,0 +1,26 @@
+@import "../../Variables.scss";
+
+.item {
+  padding: 36px 24px;
+  text-align: left;
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+  &_title {
+    margin-top: 48px;
+    margin-bottom: 12px;
+    font-family: "Unbounded";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 138.9%;
+    letter-spacing: 0.04em;
+  }
+
+  &_descr {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+  }
+}

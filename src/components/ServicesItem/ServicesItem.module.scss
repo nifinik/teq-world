@@ -1,0 +1,68 @@
+@import "../../Variables.scss";
+
+.item {
+  position: relative;
+  top: 0;
+  font-family: "Unbounded";
+  height: 500px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  &:hover {
+    .item {
+      position: relative;
+      flex: 1.5;
+      transition: all 1s ease-in;
+
+      &_num {
+        text-align: start;
+        transition: all 0.5s ease;
+      }
+
+      &_bottom {
+        display: block;
+        text-align: start;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  &_img {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  &_num {
+    font-weight: 500;
+    font-size: 76px;
+    line-height: 112.4%;
+    letter-spacing: 0.01em;
+    color: azure;
+    flex: 1;
+  }
+
+  &_bottom {
+    display: none;
+    text-align: start;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 112.4%;
+  letter-spacing: 0.01em;
+  color: #fafafa;
+  margin-bottom: 20px;
+}

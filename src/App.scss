@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,6 +44,42 @@
   }
 }
 
+.titleMini {
+  font-family: "Unbounded";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 112.4%;
+  letter-spacing: 0.04em;
+  text-align: start;
+
+  span {
+    color: $primaryColor;
+  }
+}
+
+.descrMini {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138.9%;
+  letter-spacing: 0.04em;
+}
+
+.benefits {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    max-width: 60%;
+    margin-bottom: 56px;
+  }
+}
+
 .logoSide {
   background-color: $nextColor;
   padding: 10px 24px;
@@ -68,14 +109,44 @@
   cursor: pointer;
 }
 
+.mainBtn:hover {
+  cursor: pointer;
+}
+
 .line {
-  border: 2px solid $mainBlack;
+  border: 2.5px solid $mainBlack;
+  &_white {
+    margin-bottom: 36px;
+    border: 2.5px solid #fafafa;
+  }
 }
 
 .titleHead {
   display: flex;
   gap: 36px;
   align-items: center;
+
+  img {
+    animation: 5s linear 0s normal none infinite running img;
+    -webkit-animation: 5s linear 0s normal none infinite running img;
+  }
+
+  @keyframes img {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes img {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 .subtitle {
@@ -105,36 +176,36 @@
 
 // Main section
 
-.main {
-  margin-top: 80px;
-  padding: 0 80px;
-  &_head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    &_title {
-      margin: 0;
-      font-family: "Unbounded", sans-serif;
-      text-align: start;
-      font-weight: 600;
-      font-size: 56px;
-      line-height: 88.9%;
-      letter-spacing: 0.04em;
-      max-width: 800px;
-    }
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &_title {
+    margin: 0;
+    font-family: "Unbounded", sans-serif;
+    text-align: start;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 88.9%;
+    letter-spacing: 0.04em;
+    max-width: 800px;
+  }
 
-    &_right {
-      &_btns {
-        margin-top: 16px;
-        display: flex;
-        gap: 16px;
-      }
-    }
-
-    &_text {
-      text-align: end;
+  &_right {
+    &_btns {
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
     }
   }
+
+  &_text {
+    text-align: end;
+  }
+}
+
+.main {
+  margin-top: 80px;
 
   &_bg {
     margin-top: 48px;
@@ -154,7 +225,7 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
-  margin: 80px;
+  margin: 80px 0;
   border-top: 4px solid $mainBlack;
   border-bottom: 4px solid $mainBlack;
 
@@ -217,7 +288,6 @@
 .footer {
   font-family: "Open Sans", sans-serif;
   padding: 48px 0;
-  margin: 0 80px;
 
   &_head {
     display: flex;
@@ -285,7 +355,6 @@
 
 .callUs {
   margin-top: 80px;
-  padding: 0 80px;
   display: flex;
   gap: 120px;
   margin-bottom: 100px;
@@ -339,11 +408,7 @@
 // Partners
 
 .partners {
-  padding-bottom: 60px;
-  border-bottom: 4px solid $mainBlack;
-
   &_content {
-    margin-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -409,5 +474,181 @@
   }
   to {
     transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.principles {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &_content {
+    margin-top: 56px;
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &_text {
+    text-align: start;
+  }
+}
+
+.thank {
+  text-align: start;
+  margin: 48px 0;
+}
+
+.sertificate {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    max-width: 60%;
+    margin-bottom: 56px;
+  }
+}
+
+// Team block
+
+.team {
+  margin: 48px 0 80px 0;
+  text-align: start;
+  .teamImg {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Advantage section
+
+.advantages {
+  margin: 48px 0;
+  text-align: start;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+
+    .item {
+      text-align: right;
+      font-family: "Unbounded";
+      &_title {
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 112.4%;
+        letter-spacing: 0.01em;
+      }
+
+      &_subtitle {
+        margin-top: 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 112.4%;
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+}
+
+// services section
+
+.services {
+  margin-top: 56px;
+
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 48px;
+  }
+
+  &_items {
+    margin-top: 48px;
+    gap: 8px;
+    display: flex;
+    margin-bottom: 56px;
+    border-radius: 12px;
+  }
+}
+
+.onlyLine {
+  margin-bottom: 80px;
+}
+
+.project {
+  font-family: "Unbounded";
+  margin-bottom: 100px;
+
+  &_head {
+    color: #fafafa;
+    margin: 48px 0;
+    position: relative;
+    height: 350px;
+    padding: 48px;
+    text-align: start;
+    img {
+      border-radius: 12px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+
+  &_bottom {
+    width: 70%;
+  }
+
+  &_title {
+    margin: 36px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 112.4%;
+    letter-spacing: 0.04em;
+  }
+
+  &_descr {
+    text-align: start;
+  }
+}
+
+.breadCrumb {
+  display: flex;
+  gap: 12px;
+  color: #fafafa;
+
+  &_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 0.04em;
+  }
+
+  &_title:nth-child(1) {
+    font-weight: 300;
   }
 }
