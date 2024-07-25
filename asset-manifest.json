@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/teq-world/static/css/main.5bace708.css",
-    "main.js": "/teq-world/static/js/main.3aa4b54c.js",
+    "main.js": "/teq-world/static/js/main.6eb63a0c.js",
     "static/media/bg-main.png": "/teq-world/static/media/bg-main.65047a588fbf13aa577c.png",
     "static/media/serviceItem_4.png": "/teq-world/static/media/serviceItem_4.52ab94b0eee1eb88b25e.png",
     "static/media/serviceItem_2.png": "/teq-world/static/media/serviceItem_2.fdf263c7ff8d9dbb024c.png",
@@ -20,10 +20,10 @@
     "static/media/benefit-Icon.svg": "/teq-world/static/media/benefit-Icon.a8afbab457e6ccf415114212e64f521f.svg",
     "static/media/starVec.svg": "/teq-world/static/media/starVec.280b1d75807b67080891ab7a94884730.svg",
     "main.5bace708.css.map": "/teq-world/static/css/main.5bace708.css.map",
-    "main.3aa4b54c.js.map": "/teq-world/static/js/main.3aa4b54c.js.map"
+    "main.6eb63a0c.js.map": "/teq-world/static/js/main.6eb63a0c.js.map"
   },
   "entrypoints": [
     "static/css/main.5bace708.css",
-    "static/js/main.3aa4b54c.js"
+    "static/js/main.6eb63a0c.js"
   ]
 }
