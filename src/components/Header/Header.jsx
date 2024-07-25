@@ -14,7 +14,7 @@ const Header = () => {
           className={({ isActive }) =>
             isActive ? styles.navItem_active : styles.navItem
           }
-          to="/"
+          to="/teq-world"
         >
           Главная
         </NavLink>
