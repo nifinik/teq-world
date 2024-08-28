@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <NavLink to="/teq-world" className={styles.logoSide}>
+      <NavLink to="/" className={styles.logoSide}>
         <img src={logo} alt="" />
       </NavLink>
       <nav>
@@ -14,7 +14,7 @@ const Header = () => {
           className={({ isActive }) =>
             isActive ? styles.navItem_active : styles.navItem
           }
-          to="/teq-world"
+          to="/"
         >
           Главная
         </NavLink>

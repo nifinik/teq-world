@@ -15,7 +15,7 @@ function App() {
         <ScrollToTop />
         <Header />
         <Routes>
-          <Route path="/teq-world" Component={Home} />
+          <Route path="/" Component={Home} />
           <Route path="/aboutus" Component={AboutUs} />
           <Route path="/contacts" Component={Contacts} />
           <Route path="/project/:id" Component={Project} />

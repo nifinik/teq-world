@@ -652,3 +652,17 @@
     font-weight: 300;
   }
 }
+
+.contacts {
+  &_head {
+    margin-top: 56px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .title {
+      margin: 0;
+    }
+  }
+}
